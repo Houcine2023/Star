@@ -1,0 +1,45 @@
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*position: relative;*/
+  height: 20vh;  /* Full viewport height */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;  /* Take full width of the container */
+  height: 500px;  /* Maintain aspect ratio */
+  object-fit: cover;  /* Cover the area while maintaining the aspect ratio */
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(200%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;  /* Position on the left */
+}
+
+.next-btn {
+  right: 10px;  /* Position on the right */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);  /* Darken when hovering */
+}

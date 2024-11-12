@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+.container{
+  display: flex;
+  border: 5px solid black;
+  justify-content: end;
+}
+
+.mainlist{
+  display: flex;
+  border: 5px solid red;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.smalllist{
+  display: block;
+}

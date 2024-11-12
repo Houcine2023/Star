@@ -1,0 +1,34 @@
+<div class="container">
+  <ul class="mainlist">
+    <li>
+      <div class="parentsdiv">
+        <button (mouseenter)="Enter(0)" (mouseleave)="leave(0)" #parent>parents</button>
+        <ul *ngIf="ishovered[0]" class="smalllist">
+          <li>case1</li>
+          <li>case2</li>
+          <li>case3</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="parentsdiv">
+        <button (mouseenter)="Enter(1)" (mouseleave)="leave(1)">parents</button>
+        <ul *ngIf="ishovered[1]" class="smalllist">
+          <li>case1</li>
+          <li>case2</li>
+          <li>case3</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="parentsdiv">
+        <button (mouseenter)="Enter(2)" (mouseleave)="leave(2)">parents</button>
+        <ul *ngIf="ishovered[2]" class="smalllist">
+          <li>case1</li>
+          <li>case2</li>
+          <li>case3</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
